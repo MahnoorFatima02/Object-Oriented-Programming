@@ -37,10 +37,10 @@ class Building:
             self.elevator_list.append(Elevator(no_of_top_floors, no_of_bottom_floors))
 
     def run_elevator(self, elevator_number: int, destination_floor: int):
-        self.elevator_list[elevator_number-1].go_to_floor(destination_floor)
+        self.elevator_list[elevator_number - 1].go_to_floor(destination_floor)
+
 
 if __name__ == "__main__":
-
     building_1 = Building(9, -2, 6)
 
     building_1.run_elevator(2, 4)
